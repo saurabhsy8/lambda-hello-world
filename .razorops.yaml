@@ -4,4 +4,4 @@ tasks:
     # - checkout
     - commands:
       - |
-        aws s3 ls
+        aws lambda list-functions
