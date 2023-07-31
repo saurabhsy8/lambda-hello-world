@@ -1,0 +1,7 @@
+tasks:
+  deploy-lambda:
+    steps:
+    # - checkout
+    - commands:
+      - |
+        aws s3 ls
