@@ -1,7 +1,9 @@
 tasks:
   deploy-lambda:
     steps:
-    # - checkout
+    - checkout
     - commands:
       - |
+        npm install -g serverless
         aws lambda list-functions
+        serverless deploy
